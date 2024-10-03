@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <head>
-
-    <title>Price Calculator</title>
+  <script src="script.js" defer></script>
+  <link href="style.css" rel="stylesheet" />
+  <title>Price Calculator</title>
 </head>
 
 <body>
+  <div class="wrapper">
+    <div class="heading">
+      <h1>Simple, traffic-based pricing</h1>
+      <h2>based on monthly page views</h2>
+    </div>
+    <section class="calculatorContainer">
+      <div class="pageviews">1 Million views</div>
+      <div class="slidebarcontainer">
+        <input
+          type="range"
+          min="1"
+          max="5"
+          value="5"
+          class="sliderbar"
+          id="myRange"
+        />
+      </div>
+      <div class="switchcontainer">
+        <p>Monthly</p>
+        <label class="switch">
+          <input id="yearly" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <p>Yearly</p>
+      </div>
+      <p class="discountmarker">25% discount</p>
 
-    
+      <div class="displayPrice">$36</div>
+      <div class="perkscontainer">
+        <ul>
+          <li>Unlimited Websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+        <button>Start my trial</button>
+      </div>
+    </section>
+  </div>
 </body>
